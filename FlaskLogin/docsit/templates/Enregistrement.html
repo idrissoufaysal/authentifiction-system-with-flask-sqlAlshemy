@@ -1,0 +1,50 @@
+{% extends "base.html" %} {% block title%}Enregistrement{% endblock%}
+ 
+{% block content %}
+<form action="" method="POST">
+    <h3 align="center">Creer votre compte</h3>
+    <div class="mb-a">
+        <label for="exampleInputName" class="form-label">Nom</label>
+        <input type="text" class="form-control" name="name" id="exampleInputName" aria-describedby="Namehelp">
+      </div>
+    
+              <div class="mb-b">
+        <label for="exampleInputFirstname" class="form-label">Prenom</label>
+        <input type="text" class="form-control" name="prenom" id="exampleInputName" aria-describedby="Firstnamehelp">
+          
+              </div>
+
+          
+    
+              <div class="mb-c">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" id="exampleInputEmail1"  aria-describedby="emailHelp">
+      
+              </div>
+    
+      <div class="mb-d">
+        <label for="exampleInputPassword1" n class="form-label">Mot de passe</label>
+        <input type="password" name="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      
+      <div class="mb-d">
+        <label for="exampleInputPassword1" n class="form-label">Confirmez votre mots de pass</label>
+        <input type="password" name="password2" class="form-control" id="exampleInputPassword1">
+      </div>
+
+      <br/>
+
+    
+
+    
+
+    
+    <br>
+    <input type="submit" class="btn btn-outline-success" value="Valider">
+  <input class="btn btn-outline-danger" type="reset" value="Annuler">
+
+
+</form>
+<div class="alert alert-info" role="alert">
+  vous avez un compte ?<a href="/connexion" class="alert-link">cliquer ici</a> pous vous connecter</div>
+{% endblock %}  

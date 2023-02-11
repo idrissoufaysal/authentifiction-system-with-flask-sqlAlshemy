@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block title%}Connexion{% endblock%}
+ 
+{% block content %}
+<form action="" method="POST">
+  <h3 align="center">Connectez-vous</h3>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Entrer votre email</div>
+  </div>
+
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Mot de passe </label>
+    <input type="password"name="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  
+  <br/>
+
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  
+  
+  <input type="submit" class="btn btn-outline-success" value="login"/>
+  <input class="btn btn-outline-danger" type="reset" value="Annuler">
+
+
+</form>
+<div class="alert alert-info" role="alert">
+avez vous dejas un compte ? <a href="/Enregistrement" class="alert-link">cliquer ici</a>. pour vous connecter
+</div>
+
+
+{% endblock %}
